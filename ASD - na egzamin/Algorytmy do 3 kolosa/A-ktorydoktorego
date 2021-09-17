@@ -1,0 +1,12 @@
+MST - minimal spanning tree/minimalne drzewo rozpinajace
+
+SZUKANIE NAJKROTSZYCH SCIEZEK W GRAFIE WAZONYM, gdzie G = (V, E)
+1) Dijkstra, gdzie w: E -> R+u{0} (czyli bez ujemnych wag)  szuka 1 -> 1
+2) Bellman-Ford, gdzie w: E -> R tzn. moga byc ujemne! szuka 1 -> 1
+3) Folyd - Warshall, gdzie w: E -> R   szuka wszyscy -> wszyscy
+
+Maksymalny przeplyw:
+1) Metoda Forda-Fulkersona - O((V + E) * |f*|) gdzie f* to wartosc przeplywu
+2) Metoda Edmondsa-Karpa - wybieraj sciezki powiekszajace DFS'em - O(VE^2)
+
+
